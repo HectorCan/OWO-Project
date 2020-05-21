@@ -326,14 +326,15 @@
                 } );
 
                 container.find('.dt-header input[type=search]').on( 'keyup', function (e) {
-                    _loader(false); // To prevent multiple loaders
+                    //_loader(false); // To prevent multiple loaders
 
                     clearTimeout($.data(this, 'timer'));
                     var search = this.value;
                     if(search!==table.search())
                     {
                         if (e.keyCode == 13) {
-                            table.search( search ).draw();
+
+                            table.search( search, true, true ).draw();
                         }
                         else {
                             $(this).data('timer', setTimeout(function(){
@@ -365,9 +366,9 @@
             currency: 'USD',
             minimumFractionDigits: 2
         });
-
+        var tbl = null;
         $(document).ready( function () {
-            $('#myTable').DataTable({
+            tbl = $('#myTable').DataTable({
                 serverSide: false, destroy: true, orderCellsTop: false, sType:'string', autoWidth: false, scrollY: 381, scrollX: true,
                 ordering: true,
                 'dom': "<'#dt_header'>  <'#dt_body 'tr>  <'#dt_footer container-fluid' <'row' <'col-12 col-md-7'i><'col-12 col-md-5'p> > >",
