@@ -10,7 +10,8 @@
             </a>
         </li>
 
-        @if (empty(\Auth::user()))
+        @if (!empty(\Auth::user()))
+            <!-- SE mantiene como ejemplos
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link" href="http://localhost:8116/login">
                     <i class="cil-account-logout c-sidebar-nav-icon"></i>
@@ -23,6 +24,7 @@
                     Register
                 </a>
             </li>
+            -->
         @endif
     </ul>
     <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>

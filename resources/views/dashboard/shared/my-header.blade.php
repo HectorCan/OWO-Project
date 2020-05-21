@@ -45,6 +45,11 @@
                         Log In
                     </a>
                 </li>
+                <li class="c-header-nav-item">
+                    <a class="btn btn-outline-primary"  href="{{route('register')}}">
+                        Sign Up
+                    </a>
+                </li>
             @endif
 
         </ul>

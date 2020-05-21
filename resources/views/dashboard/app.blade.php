@@ -16,7 +16,7 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>CoreUI Free Bootstrap Admin Template</title>
+    <title>OWO</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -41,6 +41,28 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pace.min.css') }}" rel="stylesheet">
 
+    <style>
+        .bd-masthead {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .bd-masthead {
+            position: relative;
+            padding: 3rem 15px;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            background: linear-gradient(to right bottom,#f7f5fb 50%,#fff 50%);
+        }
+        .c-main {
+            padding-top: 0px;
+        }
+        .c-wrapper {
+            background-color: #ffffff;
+        }
+        .m-b-3 {
+            margin-bottom: 1rem !important;
+        }
+    </style>
 @yield('css')
 
 <!-- Global site tag (gtag.js) - Google Analytics-->
