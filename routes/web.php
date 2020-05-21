@@ -11,6 +11,8 @@
 |
 */
 
+Route::resource('Property', 'PropertyController');
+
 Route::group(['middleware' => ['get.menu']], function () {
     Route::get('/', function () {
         return view('dashboard.welcome');
