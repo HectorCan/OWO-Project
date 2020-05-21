@@ -42,6 +42,7 @@
     <link href="{{ asset('css/pace.min.css') }}" rel="stylesheet">
     <link href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
         .bd-masthead {
             padding-top: 5rem;
@@ -62,6 +63,41 @@
         }
         .m-b-3 {
             margin-bottom: 1rem !important;
+        }
+        .dt-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #dt-btn-export .btn-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #dt-btn-export .btn {
+            flex: 1 1 auto;
+            border: 0px;
+            text-align: left;
+            padding-left: 1.5em;
+        }
+
+        #dt-list-vis p {
+            padding-left: 0.5em;
+            margin-bottom: 0px;
+        }
+
+        .i-stretch {
+            align-items: stretch;
+        }
+
+        .dt-button {
+            display: inline-block;
+            border: 0px !important;
+            margin: 0px !important;
+            background-color: #fff !important;
+            padding: 8px 20px !important;
+            background-image: none !important;
         }
     </style>
 @yield('css')
