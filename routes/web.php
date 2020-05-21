@@ -11,16 +11,32 @@
 |
 */
 
-Route::resource('Property', 'PropertyController');
-
 Route::group(['middleware' => ['get.menu']], function () {
     Route::get('/', function () {
         return view('dashboard.welcome');
     })->name('welcome');
 
-    Route::group(['middleware' => ['role:user']], function () {
-
+    Route::namespace('System')->group(function () {
+        Route::prefix('system')->group(function () {
+            Route::prefix('property')->group(function () {
+               Route::get('/', 'PropertyController@index')->name('sys.property.index');
+            });
+        });
     });
+
+    Route::group(['middleware' => ['role:user']], function () {
+        Route::namespace('System')->group(function () {
+            Route::prefix('system')->group(function () {
+                Route::prefix('property')->group(function () {
+                    Route::get('/get', 'PropertyController@Get')->name('sys.property.get');
+                    Route::post('/store', 'PropertyController@Store')->name('sys.property.store');
+                    Route::post('/delete', 'PropertyController@Delete')->name('sys.property.delete');
+                });
+            });
+        });
+    });
+
+    Auth::routes();
 
     /**
      * Cosas del Template
@@ -121,17 +137,16 @@ Route::group(['middleware' => ['get.menu']], function () {
                 Route::get('/file/copy',        'MediaController@fileCopy')->name('media.file.copy');
             });
         });
+
+        Route::resource('resource/{table}/resource', 'ResourceController')->names([
+            'index'     => 'resource.index',
+            'create'    => 'resource.create',
+            'store'     => 'resource.store',
+            'show'      => 'resource.show',
+            'edit'      => 'resource.edit',
+            'update'    => 'resource.update',
+            'destroy'   => 'resource.destroy'
+        ]);
     });
 
-    Auth::routes();
-
-    Route::resource('resource/{table}/resource', 'ResourceController')->names([
-        'index'     => 'resource.index',
-        'create'    => 'resource.create',
-        'store'     => 'resource.store',
-        'show'      => 'resource.show',
-        'edit'      => 'resource.edit',
-        'update'    => 'resource.update',
-        'destroy'   => 'resource.destroy'
-    ]);
 });
