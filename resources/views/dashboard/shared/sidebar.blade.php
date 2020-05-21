@@ -1,6 +1,6 @@
 <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
     <div class="c-sidebar-brand">
-        <img class="c-sidebar-brand-full" src="http://localhost:8116/assets/brand/coreui-base-white.svg" alt="CoreUI Logo" width="118" height="46"><img class="c-sidebar-brand-minimized" src="assets/brand/coreui-signet-white.svg" alt="CoreUI Logo" width="118" height="46">
+        <img class="c-sidebar-brand-full" src="{{asset('assets/img/logo2.png')}}" alt="CoreUI Logo" width="80" height="46"><img class="c-sidebar-brand-minimized" src="{{ asset('assets/img/logo2.png')}}" alt="CoreUI Logo" width="50" height="46">
     </div>
     <ul class="c-sidebar-nav ps ps--active-y">
         <li class="c-sidebar-nav-item">
@@ -11,8 +11,8 @@
         </li>
         <li class="c-sidebar-nav-item">
             <a class="c-sidebar-nav-link c-active" href="{{ route('companiesTable') }}">
-                <i class="cil-home c-sidebar-nav-icon"></i>
-                Empresas en renta
+                <i class="cil-building c-sidebar-nav-icon"></i>
+                Lugares en renta
             </a>
         </li>
 

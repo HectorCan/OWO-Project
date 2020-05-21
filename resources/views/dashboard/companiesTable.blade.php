@@ -2,33 +2,8 @@
 
 @section('content')
     <section class="bd-masthead m-b-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01">Ciudad</label>
-                        </div>
-                        <select class="custom-select" id="inputGroupSelect01">
-                            <option selected>Seleccionar</option>
-                            <option value="1">Cancún</option>
-                            <option value="2">Playa del Carmen</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01">Precio</label>
-                        </div>
-                        <select class="custom-select" id="inputGroupSelect01">
-                            <option selected>Seleccionar</option>
-                            <option value="1">Bajos</option>
-                            <option value="2">Altos</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+        <div class="container text-center">
+            <h1>Lugares en renta</h1>
         </div>
     </section>
 
@@ -38,29 +13,141 @@
                 <thead class="thead">
                     <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Ciudad</th>
+                    <th scope="col">Rentador</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col">Plan</th>
+                    <th scope="col">Precio</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>Cancún</td>
+                    <td>Ernesto Alejandro Pech Angulo</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Mensual</td>
+                    <td>5,000</td>
                     </tr>
                     <tr>
                     <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td>Cancún</td>
+                    <td>Jesus Manuel España</td>
+                    <td>MZ4 SM 74 LT181 AV.Tulum</td>
+                    <td>Mensual</td>
+                    <td>10,000</td>
                     </tr>
                     <tr>
                     <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">4</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">5</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">6</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">7</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">8</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">9</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">10</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">11</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">12</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">13</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">14</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">15</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">16</th>
+                    <td>Cancún</td>
+                    <td>Fernando García Marquez</td>
+                    <td>MZ4 SM 74 LT181 AV.Lopez Portillo</td>
+                    <td>Quincenal</td>
+                    <td>5,000</td>
                     </tr>
                 </tbody>
             </table>
