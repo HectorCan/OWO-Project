@@ -34,8 +34,8 @@
 
     <section class="m-b-3">
         <div class="container">
-            <table class="table">
-                <thead class="thead-dark">
+            <table class="table" id="myTable">
+                <thead class="thead">
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">First</th>
@@ -64,37 +64,6 @@
                     </tr>
                 </tbody>
             </table>
-
-            <table class="table">
-            <thead class="thead-light">
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                </tr>
-                <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                </tr>
-                <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                </tr>
-            </tbody>
-            </table>
         </div>
     </section>
 @endsection
@@ -104,4 +73,14 @@
     <script src="{{ asset('js/Chart.min.js') }}"></script>
     <script src="{{ asset('js/coreui-chartjs.bundle.js') }}"></script>
     <script src="{{ asset('js/main.js') }}" defer></script>
+    <script>
+        $(document).ready( function () {
+            $('#myTable').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+        } );
+    </script>
 @endsection
