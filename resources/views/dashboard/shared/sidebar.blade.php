@@ -6,7 +6,13 @@
         <li class="c-sidebar-nav-item">
             <a class="c-sidebar-nav-link c-active" href="{{ route('welcome') }}">
                 <i class="cil-home c-sidebar-nav-icon"></i>
-                Home
+                Inicio
+            </a>
+        </li>
+        <li class="c-sidebar-nav-item">
+            <a class="c-sidebar-nav-link c-active" href="{{ route('companiesTable') }}">
+                <i class="cil-home c-sidebar-nav-icon"></i>
+                Empresas en renta
             </a>
         </li>
 
