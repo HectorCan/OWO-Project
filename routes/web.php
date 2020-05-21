@@ -18,6 +18,10 @@ Route::group(['middleware' => ['get.menu']], function () {
         return view('dashboard.welcome');
     })->name('welcome');
 
+    Route::get('/companiesTable', function () {
+        return view('dashboard.companiesTable');
+    })->name('companiesTable');
+
     Route::group(['middleware' => ['role:user']], function () {
 
     });
@@ -28,6 +32,7 @@ Route::group(['middleware' => ['get.menu']], function () {
     Route::prefix('template')->group(function () {
         Route::group(['middleware' => ['role:user']], function () {
             Route::get('/', function () {           return view('dashboard.homepage'); });
+            Route::get('/neftaesjoto', function () {           return view('dashboard.homepage2'); });
 
             Route::get('/colors', function () {     return view('dashboard.colors'); });
             Route::get('/typography', function () { return view('dashboard.typography'); });
